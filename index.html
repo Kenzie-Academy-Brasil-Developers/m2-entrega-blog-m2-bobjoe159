@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <title>Login - Cadastro</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style-home-page.css">
+    <title>Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +14,83 @@
 
 </head>
 <body>
-    <main class="container">
+
+  <header class="cabecalho">
+
+    <div class="cabecalho__foto-perfil">
+
+      <div class="cabecalho__foto-perfil__img">
+        <img src="src/img/cat.webp" alt="Imagem de perfil" width="80px" height="70px">
+      </div>
+
+      <span class="cabecalho__foto-perfil__titulo">
+        Gatinho...
+      </span>
+      
+    </div>
 
 
+    <button class="cabecalho__btn-logout" type="submit">
+      Logout
+    </button>
 
 
-        <section class="container__secao-cadastro">
+  </header>
+    
 
-            <form  class="container__secao-cadastro__form-cadastro">
-                <label class="container__secao-cadastro__form-cadastro__label" for="">Cadastro</label>
-                <input id="input-cadastro__nome" type="text" placeholder="Nome do usuário">
-                <input id="input-cadastro__email" type="text" placeholder="E-mail">
-                <input id="input-cadastro__foto" type="text" placeholder="Foto de perfil">
-                <input id="input-cadastro__password" type="password" placeholder="Senha">
+  <main class="container">
 
-                <button id="btn-cadastro">Entrar</button>
-            </form>
 
+      <section class="container__card-input__pai">
+            <input type="text" class="container__card-input" placeholder="No que vocẽ está pensando?">
+
+            </input>
+
+            <button type="submit" class="container__btn-postar">
+              +
+            </button>
         </section>
 
 
-        <section class="container__secao-login">
+        
+        
+        <section class="container__card-pai">
+          
+            <div class="container__card-posts">
+                  <img src="src/img/cat.webp" alt="" class="container__card-posts__img" width="100px" height="100px">
+                   
+                  <div class="container__card-posts__titulo-texto">    
+                      <h3 class="container__card-posts__titulo">
+                        Titulo postagem
+                      </h3>
+                      <div class="container__card-posts__texto">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley
 
-            <form  class="container__secao-login__form-login">
-                <label class="container__secao-login__form-login__label" for="">Entrar</label>
-                <input id="input-login__email" type="text" placeholder="E-mail">
-                <input id="input-login__password" type="password" placeholder="Senha">
-                <button id="btn-login">Entrar</button>
-            </form>
-  
-        </section>
+                      </div>
+                  </div>
+                  <div class="container__card-posts__data">
+                      25/08/2022
+                  </div>
+               
+              <div class="container__card-posts__editar-post">
+                    <button class="container__card-posts__editar-post__editar">
+                      <img src="src/img/icone-editar.jpg" width="50px" height="50px" alt="">
+                    </button>
+
+                    <button class="container__card-posts__editar-post__remover">
+                      <img src="src/img/icone-remover.png"  width="55px" height="55px" alt="">
+                  </button>
+                </div>
+
+            </div>
+
+
+            
+          
+
+      </section>
 
 
 
