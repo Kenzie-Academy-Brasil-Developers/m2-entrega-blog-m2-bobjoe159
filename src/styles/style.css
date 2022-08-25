@@ -7,7 +7,6 @@
 
 
 .container{
-    border: solid red 1px;
     width: 375px;
     height: 800px;
     background-color: var(--main-color);
@@ -21,7 +20,6 @@
 
 
 .container__secao-cadastro{
-    border: solid rgb(254, 0, 0);
     width: 300px;
     height: 400px;
     margin: 0 auto;
@@ -47,7 +45,6 @@
     text-align: center;
     color: white;
     margin: 0 auto;
-    border: solid rgb(254, 0, 0);
 
     
     
@@ -71,6 +68,9 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    color: white;
+    background-color: var(--main-color);
+
 }
 
 
@@ -111,7 +111,6 @@
 
 .container__secao-login{
 
-    border: solid green 1px;
     width: 300px;
     height: 250px;
     margin: 0 auto;
@@ -136,7 +135,6 @@
     justify-content:space-around;   
     text-align: center;
     color: white;
-    border: solid rgb(254, 0, 0);
 
 }
 
@@ -157,6 +155,8 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    color: white;
+    background-color: var(--main-color);
 
 
 }
@@ -179,4 +179,917 @@
 
 
 
+/*================================================= MIN 475px ==================================================== */
 
+
+
+@media (min-width: 475px){
+
+
+
+
+.container{
+    width: 475px;
+    height: 800px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.container__secao-cadastro{
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--color-form);
+    border-radius: 5px;
+
+}
+
+
+/*Formulário de cadastro*/
+
+
+.container__secao-cadastro__form-cadastro{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;   
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+
+    
+    
+
+}
+
+
+
+.container__secao-cadastro__form-cadastro__label{
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+#btn-cadastro{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+
+/*Estilização de inputs de cadastro*/
+
+#input-cadastro__nome{
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+
+#input-cadastro__email{
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+
+#input-cadastro__foto{
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+
+#input-cadastro__password{
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+
+
+/*Estilização de inputs de cadastro (PLACEHOLDER)*/
+
+
+
+
+#input-cadastro__nome::placeholder{
+    font-size: 15px;
+}
+
+
+#input-cadastro__email::placeholder{
+    font-size: 15px;
+}
+
+
+#input-cadastro__foto::placeholder{
+    font-size: 15px;
+}
+
+
+#input-cadastro__password::placeholder{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/*Formulário de login*/
+
+
+.container__secao-login{
+
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--color-form);
+    border-radius: 5px;
+
+
+}
+
+
+
+.container__secao-login__form-login{
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;   
+    text-align: center;
+    color: white;
+
+}
+
+.container__secao-login__form-login__label{
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+
+#btn-login{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+
+
+}
+
+
+
+/*Estilização de inputs de login*/
+
+#input-login__email{
+    height: 35px;
+    border-radius: 10px;
+}
+
+#input-login__password{
+    height: 35px;
+    border-radius: 10px;
+}
+
+
+/*Estilização de inputs de login  (PLACEHOLDER)*/
+
+#input-login__email::placeholder{
+    font-size: 15px;
+}
+
+#input-login__password::placeholder{
+    font-size: 15px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/*================================================= MIN 580px ==================================================== */
+
+
+
+@media (min-width: 580px){
+
+
+
+
+    .container{
+        width: 580px;
+        height: 880px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        font-family: 'Inter', sans-serif;
+    
+    }
+    
+    
+    
+    .container__secao-cadastro{
+        width: 420px;
+        height: 480px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: var(--color-form);
+        border-radius: 5px;
+    
+    }
+    
+    
+    /*Formulário de cadastro*/
+    
+    
+    .container__secao-cadastro__form-cadastro{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;   
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+    
+        
+        
+    
+    }
+    
+    
+    
+    .container__secao-cadastro__form-cadastro__label{
+        font-size: 35px;
+        font-weight: bold;
+    
+    }
+    
+    #btn-cadastro{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+
+    }   
+    
+    
+    /*Estilização de inputs de cadastro*/
+    
+    #input-cadastro__nome{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__email{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__foto{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__password{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    
+    /*Estilização de inputs de cadastro (PLACEHOLDER)*/
+    
+    
+    
+    
+    #input-cadastro__nome::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__email::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__foto::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__password::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*Formulário de login*/
+    
+    
+    .container__secao-login{
+    
+        width: 420px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: var(--color-form);
+        border-radius: 5px;
+    
+    
+    }
+    
+    
+    
+    .container__secao-login__form-login{
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;   
+        text-align: center;
+        color: white;
+    
+    }
+    
+    .container__secao-login__form-login__label{
+        display: block;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    
+    
+    #btn-login{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+
+    
+    }
+    
+    
+    
+    /*Estilização de inputs de login*/
+    
+    #input-login__email{
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    #input-login__password{
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    
+    /*Estilização de inputs de login  (PLACEHOLDER)*/
+    
+    #input-login__email::placeholder{
+        font-size: 15px;
+    }
+    
+    #input-login__password::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+/*================================================= MIN 768px ==================================================== */
+
+
+
+@media (min-width: 768px){
+
+
+
+
+    .container{
+        width: 768px;
+        height: 1024px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        font-family: 'Inter', sans-serif;
+    
+    }
+    
+    
+    
+    .container__secao-cadastro{
+        width: 600px;
+        height: 530px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: var(--color-form);
+        border-radius: 5px;
+    
+    }
+    
+    
+    /*Formulário de cadastro*/
+    
+    
+    .container__secao-cadastro__form-cadastro{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;   
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+    
+        
+        
+    
+    }
+    
+    
+    
+    .container__secao-cadastro__form-cadastro__label{
+        font-size: 35px;
+        font-weight: bold;
+    
+    }
+    
+    #btn-cadastro{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+
+    }
+    
+    
+    /*Estilização de inputs de cadastro*/
+    
+    #input-cadastro__nome{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__email{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__foto{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__password{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    
+    /*Estilização de inputs de cadastro (PLACEHOLDER)*/
+    
+    
+    
+    
+    #input-cadastro__nome::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__email::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__foto::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__password::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*Formulário de login*/
+    
+    
+    .container__secao-login{
+    
+        width: 600px;
+        height: 380px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: var(--color-form);
+        border-radius: 5px;
+    
+    
+    }
+    
+    
+    
+    .container__secao-login__form-login{
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;   
+        text-align: center;
+        color: white;
+    
+    }
+    
+    .container__secao-login__form-login__label{
+        display: block;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    
+    
+    #btn-login{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+
+    
+    
+    }
+    
+    
+    
+    /*Estilização de inputs de login*/
+    
+    #input-login__email{
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    #input-login__password{
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    
+    /*Estilização de inputs de login  (PLACEHOLDER)*/
+    
+    #input-login__email::placeholder{
+        font-size: 15px;
+    }
+    
+    #input-login__password::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    
+    }
+
+
+
+
+
+
+
+    /*================================================= MIN 1024px ==================================================== */
+
+
+
+@media (min-width: 1024px){
+
+
+
+
+    .container{
+        width: 100%;
+        height: 720px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        margin:  0 auto;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    .container__secao-cadastro{
+        width: 430px;
+        height: 515px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: var(--color-form);
+        border-radius: 5px;
+    
+    }
+    
+    
+    /*Formulário de cadastro*/
+    
+    
+    .container__secao-cadastro__form-cadastro{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;   
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+    
+        
+        
+    
+    }
+    
+    
+    
+    .container__secao-cadastro__form-cadastro__label{
+        font-size: 35px;
+        font-weight: bold;
+    
+    }
+    
+    #btn-cadastro{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+
+    }
+    
+    
+    /*Estilização de inputs de cadastro*/
+    
+    #input-cadastro__nome{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__email{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__foto{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    #input-cadastro__password{
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    
+    /*Estilização de inputs de cadastro (PLACEHOLDER)*/
+    
+    
+    
+    
+    #input-cadastro__nome::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__email::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__foto::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    #input-cadastro__password::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*Formulário de login*/
+    
+    
+    .container__secao-login{
+    
+        width: 430px;
+        height: 331px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: var(--color-form);
+        border-radius: 5px;
+    
+    
+    }
+    
+    
+    
+    .container__secao-login__form-login{
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;   
+        text-align: center;
+        color: white;
+    
+    }
+    
+    .container__secao-login__form-login__label{
+        display: block;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    
+    
+    #btn-login{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+    
+    
+    }
+    
+    
+    
+    /*Estilização de inputs de login*/
+    
+    #input-login__email{
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    #input-login__password{
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    
+    /*Estilização de inputs de login  (PLACEHOLDER)*/
+    
+    #input-login__email::placeholder{
+        font-size: 15px;
+    }
+    
+    #input-login__password::placeholder{
+        font-size: 15px;
+    }
+    
+    
+    }
