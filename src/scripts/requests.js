@@ -12,4 +12,32 @@ export class ApiRequests {
 
     return newUser
   }
+
+
+
+  static async login(body){
+
+    const useLogin = await fetch(`${this.urlBase}/users/login`, {
+
+      method: 'POST',
+      headers: this.headers,
+      body: JSON.stringify(body)
+    })
+    .then(res => res.json())
+    .then(res => { 
+      
+      localStorage.setItem('userId', res.userId)
+      localStorage.setItem('token', res.token)
+      window.location.assign('../index.html')
+      console.log(res)
+
+    })
+    .catch(err => console.log(err))
+
+    return useLogin
+
+  }
+
 }
+
+
