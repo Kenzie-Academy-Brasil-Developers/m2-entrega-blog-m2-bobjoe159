@@ -1,38 +1,28 @@
-import { ApiRequests } from "./requests"
-
+import { ApiRequests } from './requests.js'
 
 class Login {
-  static handleSignup(){
-
+  static handleSignup() {
     const token = localStorage.getItem('token')
 
-    if(token){
-
-      window.location.assign('src/pages/index.html')
-
+    if (token) {
+      window.location.assign('../index.html')
     }
 
     const emailInput = document.getElementById('input-login__email')
     const passwordInput = document.getElementById('input-login__password')
     const btnLogin = document.getElementById('btn-login')
 
-    btnLogin.addEventListener('click', function(event){
+    btnLogin.addEventListener('click', async event => {
       event.preventDefault()
 
       const data = {
-
         email: emailInput.value,
         password: passwordInput.value
       }
 
-      ApiRequests.login(data)
-
+      await ApiRequests.login(data)
     })
-
-
-
   }
 }
-
 
 Login.handleSignup()
