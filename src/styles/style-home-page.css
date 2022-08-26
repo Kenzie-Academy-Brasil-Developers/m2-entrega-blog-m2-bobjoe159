@@ -231,7 +231,7 @@
     }
 
     .modalBackground {
-        display: block;
+        display: none;
     }
     
     .modal__edit-post {
