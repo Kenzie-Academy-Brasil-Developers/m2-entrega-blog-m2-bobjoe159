@@ -19,9 +19,10 @@ class Signup {
         avatarUrl: userPhoto.value,
         password: userPassword.value
       }
-
+      console.log(data)
       await ApiRequests.newUser(data)
     })
+
   }
 }
 
