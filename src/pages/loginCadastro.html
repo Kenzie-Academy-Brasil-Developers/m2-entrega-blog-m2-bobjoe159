@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Login - Cadastro</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main class="container">
+      <section class="container__secao-cadastro">
+        <form class="container__secao-cadastro__form-cadastro">
+          <label class="container__secao-cadastro__form-cadastro__label" for=""
+            >Cadastro</label
+          >
+          <input
+            id="input-cadastro__nome"
+            type="text"
+            placeholder="Nome do usuário"
+          />
+          <input id="input-cadastro__email" type="text" placeholder="E-mail" />
+          <input
+            id="input-cadastro__foto"
+            type="text"
+            placeholder="Foto de perfil"
+          />
+          <input
+            id="input-cadastro__password"
+            type="password"
+            placeholder="Senha"
+          />
 
+          <button id="btn-cadastro">Entrar</button>
+        </form>
+      </section>
 
-
-
-        <section class="container__secao-cadastro">
-
-            <form  class="container__secao-cadastro__form-cadastro">
-                <label class="container__secao-cadastro__form-cadastro__label" for="">Cadastro</label>
-                <input id="input-cadastro__nome" type="text" placeholder="Nome do usuário">
-                <input id="input-cadastro__email" type="text" placeholder="E-mail">
-                <input id="input-cadastro__foto" type="text" placeholder="Foto de perfil">
-                <input id="input-cadastro__password" type="password" placeholder="Senha">
-
-                <button id="btn-cadastro">Entrar</button>
-            </form>
-
-        </section>
-
-
-        <section class="container__secao-login">
-
-            <form  class="container__secao-login__form-login">
-                <label class="container__secao-login__form-login__label" for="">Entrar</label>
-                <input id="input-login__email" type="text" placeholder="E-mail">
-                <input id="input-login__password" type="password" placeholder="Senha">
-                <button id="btn-login">Entrar</button>
-            </form>
-  
-        </section>
-
-
-
+      <section class="container__secao-login">
+        <form class="container__secao-login__form-login">
+          <label class="container__secao-login__form-login__label" for=""
+            >Entrar</label
+          >
+          <input id="input-login__email" type="text" placeholder="E-mail" />
+          <input
+            id="input-login__password"
+            type="password"
+            placeholder="Senha"
+          />
+          <button id="btn-login">Entrar</button>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>
