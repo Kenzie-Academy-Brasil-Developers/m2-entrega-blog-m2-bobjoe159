@@ -1039,19 +1039,18 @@
     
     
         .container__card-input{
-            width: 60%;
-            height: 180px;
+            width: 80%;
+            height: 140px;
             margin-left: 12px;
             background-color: #ECF0F1;
             border-radius: 20px;
             margin-top: 25px;
-            text-align: center;
             font-size: 25px;
         }
     
     
         .container__card-input::placeholder{
-            font-size: 30px;
+            font-size: 21px;
         }
     
     
@@ -1065,7 +1064,7 @@
             color: white;
             cursor: pointer;                                                                                      
             display: inline;
-            margin-left: 600px;
+            margin-left: 750px;
         }
     
     
@@ -1085,14 +1084,15 @@
     
     
         .container__card-posts{
-            width: 60%;
-            height: 700px;
+            width: 80%;
+            height: 360px;
             margin-left: 12px;
             margin-bottom: 100px;
             background-color: #ECF0F1;
             border-radius: 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             justify-content:center;
             align-items: center;
     
@@ -1103,28 +1103,25 @@
     
         .container__card-posts__img{
             border-radius: 60px;
-            margin: 40px;
         }
     
     
     
         .container__card-posts__titulo-texto{
             width: 730px;
-            height: 380px;
-    
+            height: 200px;
         }
     
         .container__card-posts__titulo{
             text-align: center;
             margin: 5px;
-            font-size: 23px;
+            font-size: 20px;
         }
     
     
         .container__card-posts__texto{
             width: 700px;
-            height: 300px;
-            margin: 10px;
+            height: 150px;
             color: #363457;
             font-size: 20px;
             display: flex;
@@ -1135,20 +1132,19 @@
     
     
         .container__card-posts__data{
-            margin: 25px;
+            margin: 250px 0 0  0;
             font-size: 20px;
             font-weight: bold;
         }
     
     
         .container__card-posts__editar-post{
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content:center;
+            display: inline;
             width: 250px;
             height: 60px;
-         
+            margin-right: 730px;
+            margin-bottom: 50px;
+            
         }
     
         .container__card-posts__editar-post__editar{
