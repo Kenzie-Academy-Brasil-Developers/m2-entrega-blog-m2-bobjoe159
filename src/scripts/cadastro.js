@@ -8,8 +8,6 @@ class Signup {
     const userPassword = document.getElementById('input-cadastro__password')
     const btnCadastro = document.getElementById('btn-cadastro')
 
-
-
     btnCadastro.addEventListener('click', async function (event) {
       event.preventDefault()
 
@@ -19,10 +17,8 @@ class Signup {
         avatarUrl: userPhoto.value,
         password: userPassword.value
       }
-      console.log(data)
       await ApiRequests.newUser(data)
     })
-
   }
 }
 
