@@ -22,7 +22,7 @@ export class ApiRequests {
       .then(res => {
         localStorage.setItem('userId', res.userId)
         localStorage.setItem('token', res.token)
-        window.location.assign('../index.html')
+        window.location.assign('/index.html')
       })
       .catch(err => console.log(err))
 
