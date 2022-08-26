@@ -5,7 +5,7 @@ class Login {
     const token = localStorage.getItem('token')
 
     if (token) {
-      window.location.assign('../index.html')
+      window.location.assign('/index.html')
     }
 
     const emailInput = document.getElementById('input-login__email')

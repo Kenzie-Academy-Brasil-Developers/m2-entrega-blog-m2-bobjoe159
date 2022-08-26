@@ -5,7 +5,7 @@ class Signup {
     const userName = document.getElementById('input-cadastro__nome')
     const userEmail = document.getElementById('input-cadastro__email')
     const userPhoto = document.getElementById('input-cadastro__foto')
-    const userPassword = document.getElementById('input-cadastro__foto')
+    const userPassword = document.getElementById('input-cadastro__password')
     const btnCadastro = document.getElementById('btn-cadastro')
 
     btnCadastro.addEventListener('click', async function (event) {
@@ -17,7 +17,6 @@ class Signup {
         avatarUrl: userPhoto.value,
         password: userPassword.value
       }
-
       await ApiRequests.newUser(data)
     })
   }
