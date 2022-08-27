@@ -1129,7 +1129,7 @@
     
     
         .container__card-input{
-            width: 80%;
+            width: 85%;
             height: 140px;
             margin-left: 12px;
             background-color: #ECF0F1;
@@ -1173,7 +1173,7 @@
     
     
         .container__card-posts{
-            width: 80%;
+            width: 85%;
             height: 360px;
             margin-left: 12px;
             margin-bottom: 100px;
@@ -1221,9 +1221,11 @@
     
     
         .container__card-posts__data{
+            width: 180px;
             margin: 250px 0 0  0;
             font-size: 20px;
             font-weight: bold;
+            border: solid red 2px;
         }
     
     

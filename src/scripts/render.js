@@ -1,5 +1,9 @@
 export class Render {
+
+
+
   static renderPostList(array) {
+
     const ul = document.querySelector('.container__card-pai')
     array.forEach(post => {
       const card = Render.renderCard(post)
@@ -7,6 +11,7 @@ export class Render {
     })
   }
   static renderCard(post) {
+
     const { id, content, createdAt, user } = post
     console.log(user['username'])
     const div = document.createElement('div')
@@ -28,6 +33,8 @@ export class Render {
     img.src = `${user['avatarUrl']}`
     divh3.innerHTML = `${user['username']}`
     divTexto.innerHTML = `${content}`
+    divData.innerText = `${createdAt}`
+    
     return div
   }
 }
