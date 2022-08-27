@@ -1,3 +1,4 @@
+
 export class ApiRequests {
   static urlBase = 'https://blog-m2.herokuapp.com'
   static token = localStorage.getItem('token') || ''
@@ -44,3 +45,6 @@ export class ApiRequests {
     return posts
   }
 }
+
+
+console.log(ApiRequests.getAllPosts())
