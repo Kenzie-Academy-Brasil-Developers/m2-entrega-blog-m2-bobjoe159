@@ -6,6 +6,17 @@ export class ApiRequests {
     Authorization: `Bearer ${this.token}`
   }
 
+  static async newUser(body) {
+    const newUser = await fetch(`${this.urlBase}/users/register`, {
+      method: 'POST',
+      headers: this.headers,
+      body: JSON.stringify(body)
+    })
+      .then(res => res.json())
+      .catch(err => console.log(err))
+    return newUser
+  }
+
   static async login(body) {
     const userLogin = await fetch(`${this.urlBase}/users/login`, {
       method: 'POST',
@@ -23,15 +34,13 @@ export class ApiRequests {
     return userLogin
   }
 
-  static async newUser(body) {
-    console.log(body)
-    const newUser = await fetch(`${this.urlBase}/users/register`, {
-      method: 'POST',
-      headers: this.headers,
-      body: JSON.stringify(body)
+  static async getAllPosts() {
+    const posts = await fetch(`${this.urlBase}/posts?page=1`, {
+      method: 'GET',
+      headers: this.headers
     })
       .then(res => res.json())
       .catch(err => console.log(err))
-    return newUser
+    return posts
   }
 }
