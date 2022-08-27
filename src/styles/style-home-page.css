@@ -163,9 +163,11 @@
 
 
 
-    .container__card-posts__img{
+    .container__card-posts__img {
         border-radius: 50px;
         margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
     }
 
 
@@ -450,7 +452,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-bottom: 20px;
+        margin-top: 60%;
     }
 
 
