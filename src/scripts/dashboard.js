@@ -48,8 +48,8 @@ class Dashboard {
       await ApiRequests.updatePosts(data, updateId)
       localStorage.removeItem('itemId')
       const posts = await ApiRequests.getAllPosts()
-      console.log(posts)
       this.renderDash(posts.data)
+      inputValue.value = ''
       Modal.showEditModal()
       Modal.closeEditModal()
       Modal.showModalDelete()
