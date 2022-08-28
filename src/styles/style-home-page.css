@@ -1043,24 +1043,25 @@
 
         .cabecalho{
             width: 100%;
-            height: 70px;
+            height: 90px;
             background-color: var(--color-form);
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            padding: 40px;
         }
     
     
     
         .cabecalho__foto-perfil{
-            width: 280px;
+            width: 250px;
             height: 83px;
             display: flex;
             flex-direction: row;
             justify-content:center;
             text-align: center;
-            margin: 20px;
+            padding: 8px;
+            margin-left: 20px;
             
         }
     
@@ -1079,10 +1080,10 @@
     
     
         .cabecalho__foto-perfil__titulo{
-            width: 100%;
+            width: 300px;
             height: 100%;
             line-height: 80px;
-            font-size: 23px;
+            font-size: 20px;
             font-weight: bold;
             color: white;
             margin-right: 30px;
@@ -1091,26 +1092,38 @@
     
     
         .cabecalho__btn-logout{
-            width: 120px;
-            height: 40px;
-            padding: 8px;
+            width: 145px;
+            height: 45px;
+            padding: 5px;
+            font-size: 20px;
             text-align: center;
             background-color: var(--main-color);
-            margin-right: 25px;
+            margin: 0 auto;
             border-radius: 20px;
             color: white;
             font-weight: bold;
             cursor: pointer;
-            font-size: 18px;
+            margin-left: 65%;
+        }
+    
+
+        .cabecalho__btn-logout:hover{
+            width: 145px;
+            height: 45px;
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #ECF0F1;
+            margin: 0 auto;
+            border-radius: 20px;
+            color: var(--main-color);
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 65%;
         }
     
     
-
-
-    
-        /*Congiguração do container (Área onde estão os cards)*/
-    
-    
+        /*Congiguração do container*/
     
     
     
@@ -1118,50 +1131,50 @@
             width: 100%;
             height: 100%;
             background-color: var(--main-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            border: solid red 2px;
+            display: block;
             font-family: 'Inter', sans-serif;
+        
         }
         
     
     
         .container__card-input__pai{
             width: 100%;
-            height: 200;
-            margin-bottom: 30px;
+            height: 190px;
+            border: solid red 2px;
             text-align: center;
+    
         }
     
     
     
         .container__card-input{
-            width: 85%;
-            height: 140px;
-            margin-left: 12px;
+            width: 60%;
+            height: 100px;
             background-color: #ECF0F1;
             border-radius: 20px;
-            margin-top: 25px;
-            font-size: 25px;
+            margin-top: 20px;
         }
     
     
         .container__card-input::placeholder{
-            font-size: 21px;
+            font-size: 20px;
         }
     
     
     
         .container__btn-postar{
-            width: 150px;
-            height: 50px;
+            width: 100px;
+            height: 47px;
             border-radius: 20px;
+            font-size: 28px;
             font-weight: bold;
             background-color: var(--color-form);
-            color: white;
-            cursor: pointer;                                                                                      
+            color: wheat;
+            cursor: pointer;
             display: inline;
-            margin-left: 750px;
+            margin-left: 50%;
         }
     
     
@@ -1172,78 +1185,68 @@
     
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: solid red 2px;
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+    
         }
     
     
         .container__card-posts{
-            width: 85%;
-            height: 360px;
-            margin-left: 12px;
-            margin-bottom: 100px;
+            width: 60%;
+            margin: 0 auto 50px auto; 
             background-color: #ECF0F1;
             border-radius: 20px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items: center;
-    
-    
+            list-style-type: none;
+            border: solid red 2px;
         }
     
     
     
-        .container__card-posts__img{
-            border-radius: 60px;
+        .container__card-posts__img {
+            border-radius: 50px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            width: 85px;
+            height: 85px;
         }
     
     
     
         .container__card-posts__titulo-texto{
-            width: 730px;
-            height: 200px;
+            display: block;
+            width: 83%;
+            height: 110px;
+            margin: auto;
+    
         }
     
         .container__card-posts__titulo{
+            font-size: 19px;
             text-align: center;
             margin: 5px;
-            font-size: 20px;
         }
     
     
         .container__card-posts__texto{
-            width: 700px;
-            height: 150px;
-            color: #363457;
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
+            margin: 5px;
+            font-size: 18px;
         }
     
     
         .container__card-posts__data{
-            width: 120px;
-            margin: 250px 0 0  0;
-            font-size: 20px;
-            font-weight: bold;
+            margin: 5px;
         }
     
     
         .container__card-posts__editar-post{
-            display: flex;
-            flex-direction:row;
-            justify-content: space-around;
+            margin: auto;
             width: 250px;
             height: 60px;
-            margin-right: 730px;
-            margin-bottom: 50px;
-
+         
         }
     
         .container__card-posts__editar-post__editar{
@@ -1256,15 +1259,9 @@
         .container__card-posts__editar-post__editar>img{
             width: 50px;
             height: 50px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
         }
-    
-    
-    
-    
-    
+
+
     
         .container__card-posts__editar-post__remover{
             width: 55px;
@@ -1273,13 +1270,9 @@
             cursor: pointer;
         }
 
-
         .container__card-posts__editar-post__remover>img{
             width: 45px;
             height: 45px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
         }
 
     
