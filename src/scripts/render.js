@@ -14,7 +14,7 @@ export class Render {
 
     const { id, content, createdAt, user } = post
     console.log(user['username'])
-    const div = document.createElement('div')
+    const li = document.createElement('li')
     const img = document.createElement('img')
     const divTituloPost = document.createElement('div')
     const divh3 = document.createElement('h3')
@@ -27,7 +27,7 @@ export class Render {
     const btnRemoveImg = document.createElement('img')
 
 
-    div.classList.add('container__card-posts')
+    li.classList.add('container__card-posts')
     img.classList.add('container__card-posts__img')
     divTituloPost.classList.add('container__card-posts__titulo-texto')
     divh3.classList.add('container__card-posts__titulo')
@@ -50,7 +50,7 @@ export class Render {
     divEditRemove.append(btnEdit,btnRemove)
 
 
-    div.append(img, divTituloPost, divEditRemove, divData)
+    li.append(img, divTituloPost, divEditRemove, divData)
     divTituloPost.append(divh3, divTexto)
 
 
@@ -59,9 +59,6 @@ export class Render {
     divh3.innerHTML = `${user['username']}`
     divTexto.innerHTML = `${content}`
     divData.innerText = `${createdAt}`
-
-    
-    
-    return div
+    return li
   }
 }
