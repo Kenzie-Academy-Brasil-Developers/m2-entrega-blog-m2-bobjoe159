@@ -16,7 +16,7 @@
     /*******************************************************************************************************/
 
     .cabecalho{
-        width: 375px;
+        width: 100%;
         height: 83px;
         background-color: var(--color-form);
         display: flex;
@@ -82,12 +82,11 @@
 
 
     .container{
-        width: 375px;
+        width: 100%;
         height: 100%;
         background-color: var(--main-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        border: solid red 2px;
+        display: block;
         font-family: 'Inter', sans-serif;
     
     }
@@ -95,17 +94,18 @@
 
 
     .container__card-input__pai{
-        width: 375px;
-        height: 190;
-        margin-bottom: 30px;
+        width: 100%;
+        height: 190px;
+        border: solid red 2px;
+        text-align: center;
+
     }
 
 
 
     .container__card-input{
-        width: 350px;
+        width: 90%;
         height: 100px;
-        margin-left: 10px;
         background-color: #ECF0F1;
         border-radius: 20px;
         margin-top: 20px;
@@ -119,7 +119,7 @@
 
 
     .container__btn-postar{
-        width: 100px;
+        width: 80px;
         height: 40px;
         border-radius: 20px;
         font-size: 28px;
@@ -137,28 +137,25 @@
 
     .container__card-pai{
 
-        width: 375px;
+        width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        margin-top: 10px;
         margin-bottom: 20px;
+        border: solid red 2px;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+
     }
 
 
     .container__card-posts{
-        width: 350px;
-        height: 400px;
-        margin-left: 10px;
-        margin-bottom: 100px;
+        width: 90%;
+        margin: 0 auto 50px auto; 
         background-color: #ECF0F1;
         border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-
-
+        list-style-type: none;
+        border: solid red 2px;
     }
 
 
@@ -166,19 +163,23 @@
     .container__card-posts__img {
         border-radius: 50px;
         margin-bottom: 10px;
-        width: 100px;
-        height: 100px;
+        margin-top: 5px;
+        width: 80px;
+        height: 80px;
     }
 
 
 
     .container__card-posts__titulo-texto{
-        width: 350px;
-        height: 200px;
+        display: block;
+        width: 80%;
+        height: 150px;
+        margin: auto;
 
     }
 
     .container__card-posts__titulo{
+        font-size: 18px;
         text-align: center;
         margin: 5px;
     }
@@ -186,6 +187,7 @@
 
     .container__card-posts__texto{
         margin: 5px;
+        font-size: 17px;
     }
 
 
@@ -195,9 +197,7 @@
 
 
     .container__card-posts__editar-post{
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
+        margin: auto;
         width: 250px;
         height: 60px;
      

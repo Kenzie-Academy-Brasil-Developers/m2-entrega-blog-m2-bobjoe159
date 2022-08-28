@@ -50,14 +50,14 @@ export class Render {
     divEditRemove.append(btnEdit,btnRemove)
 
 
-    li.append(img, divTituloPost, divEditRemove, divData)
+    li.append(img, divTituloPost, divData, divEditRemove)
     divTituloPost.append(divh3, divTexto)
 
 
 
     img.src = `${user['avatarUrl']}`
-    divh3.innerHTML = `${user['username']}`
-    divTexto.innerHTML = `${content}`
+    divh3.innerHTML = `Nome: ${user['username']}`
+    divTexto.innerHTML = `<strong>Post:</strong> ${content}`
     divData.innerText = `${createdAt}` 
     return li
   }
