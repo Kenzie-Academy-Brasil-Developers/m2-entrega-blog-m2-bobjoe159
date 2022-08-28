@@ -19,6 +19,7 @@ class Dashboard {
     const postAdd = document.querySelector('.container__btn-postar')
 
     postAdd.addEventListener('click', async event => {
+      console.log(postName.value)
       event.preventDefault()
       const data = {
         content: postName.value

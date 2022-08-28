@@ -54,8 +54,40 @@
 
         
         
-        <section class="container__card-pai">
+        <ul class="container__card-pai">
           
+            <!-- <li class="container__card-posts">
+                  <img src="src/img/cat.webp" alt="" class="container__card-posts__img" width="100px" height="100px">
+                   
+              <div class="container__card-posts__titulo-texto">    
+                      <h3 class="container__card-posts__titulo">
+                        Gatinho fofo
+                      </h3>
+                      <div class="container__card-posts__texto">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley
+
+                      </div>
+              </div>
+
+              <div class="container__card-posts__data">
+                      25/08/2022
+              </div>
+               
+              <div class="container__card-posts__editar-post">
+                    <button class="container__card-posts__editar-post__editar">
+                      <img src="src/img/icone-editar.jpg" width="50px" height="50px" alt="">
+                    </button>
+
+                    <button class="container__card-posts__editar-post__remover">
+                      <img src="src/img/icone-remover.png"  width="55px" height="55px" alt="">
+                  </button>
+              </div>
+
+            </li>
+
+            
             <div class="container__card-posts">
                   <img src="src/img/cat.webp" alt="" class="container__card-posts__img" width="100px" height="100px">
                    
@@ -355,43 +387,13 @@
                   </button>
               </div>
 
-            </div>
-            <div class="container__card-posts">
-                  <img src="src/img/cat.webp" alt="" class="container__card-posts__img" width="100px" height="100px">
-                   
-              <div class="container__card-posts__titulo-texto">    
-                      <h3 class="container__card-posts__titulo">
-                        Gatinho fofo
-                      </h3>
-                      <div class="container__card-posts__texto">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        standard dummy text ever since the 1500s, when an unknown printer took a galley
+            </div>-->
 
-                      </div>
-              </div>
-
-              <div class="container__card-posts__data">
-                      25/08/2022
-              </div>
-               
-              <div class="container__card-posts__editar-post">
-                    <button class="container__card-posts__editar-post__editar">
-                      <img src="src/img/icone-editar.jpg" width="50px" height="50px" alt="">
-                    </button>
-
-                    <button class="container__card-posts__editar-post__remover">
-                      <img src="src/img/icone-remover.png"  width="55px" height="55px" alt="">
-                  </button>
-              </div>
-
-            </div>
-
-          </section>
+          </ul> 
 
 
       
-      <div class="modalBackground"></div>
+      <div class="modalBackground hidden"></div>
       <section class="modal__edit-post hidden">
             <h2 class="modal__edit-title">Editar</h2>
             <input type="text" name="modal__edit-input" id="modal__edit-input" placeholder="Estou mudando meu comentário">
@@ -400,11 +402,12 @@
 
       <section class="modal__delete-post hidden">
         <p>Deseja deletar esse post?</p>
-        <button>Deletar</button>
+        <button class="modal__delete-button">Deletar</button>
       </section>
 
 
     </main>
+    <script type="module" src="./src/scripts/logout.js"></script>
     <script type="module" src="./src/scripts/dashboard.js"></script>
     <script type="module" src="./src/scripts/render.js"></script>
     <script type="module" src="./src/scripts/requests.js"></script>
