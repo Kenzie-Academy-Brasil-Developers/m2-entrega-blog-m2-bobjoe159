@@ -16,8 +16,12 @@ export class Render {
 
 
     const { id, content, createdAt, user } = post
+<<<<<<< HEAD
     console.log(user['username'])
     const li = document.createElement('li')
+=======
+    const div = document.createElement('div')
+>>>>>>> 07a1a0f1a7f89551a186b1350deec305fb348c3b
     const img = document.createElement('img')
     const divTituloPost = document.createElement('div')
     const divh3 = document.createElement('h3')
@@ -29,8 +33,12 @@ export class Render {
     const btnEditImg = document.createElement('img')
     const btnRemoveImg = document.createElement('img')
 
+<<<<<<< HEAD
 
     li.classList.add('container__card-posts')
+=======
+    div.classList.add('container__card-posts')
+>>>>>>> 07a1a0f1a7f89551a186b1350deec305fb348c3b
     img.classList.add('container__card-posts__img')
     divTituloPost.classList.add('container__card-posts__titulo-texto')
     divh3.classList.add('container__card-posts__titulo')
@@ -43,6 +51,7 @@ export class Render {
     btnRemove.classList.add('container__card-posts__editar-post__remover')
     btnEditImg.src = `src/img/btnEditPost.svg`
 
+<<<<<<< HEAD
 
     btnRemoveImg.src = `src/img/btnRemovePost.svg`
 
@@ -54,15 +63,38 @@ export class Render {
 
 
     li.append(img, divTituloPost, divData, divEditRemove)
+=======
+    btnRemoveImg.src = `src/img/btnRemovePost.svg`
+
+    btnEdit.append(btnEditImg)
+    btnRemove.append(btnRemoveImg)
+
+    divEditRemove.append(btnEdit, btnRemove)
+
+    div.append(img, divTituloPost, divEditRemove, divData)
+>>>>>>> 07a1a0f1a7f89551a186b1350deec305fb348c3b
     divTituloPost.append(divh3, divTexto)
 
 
 
     img.src = `${user['avatarUrl']}`
+<<<<<<< HEAD
     divh3.innerHTML = `Nome: ${user['username']}`
     divTexto.innerHTML = `<strong>Post:</strong> ${content}`
     divData.innerText = ` ${createdAt.slice(8,10)}/${createdAt.slice(5,7)}/${createdAt.slice(0,4)}` 
 
     return li
+=======
+    btnRemove.id = id
+    btnEdit.id = id
+    div.id = id
+    div.key = id
+    btnEditImg.id = id
+    divh3.innerHTML = `${user['username']}`
+    divTexto.innerHTML = `${content}`
+    divData.innerText = `${createdAt}`
+
+    return div
+>>>>>>> 07a1a0f1a7f89551a186b1350deec305fb348c3b
   }
 }
