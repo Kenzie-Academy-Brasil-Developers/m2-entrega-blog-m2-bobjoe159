@@ -8,7 +8,7 @@ export class Render {
   }
   static renderCard(post) {
     const { id, content, createdAt, user } = post
-    const div = document.createElement('div')
+    const li = document.createElement('div')
     const img = document.createElement('img')
     const divTituloPost = document.createElement('div')
     const divh3 = document.createElement('h3')
@@ -20,7 +20,7 @@ export class Render {
     const btnEditImg = document.createElement('img')
     const btnRemoveImg = document.createElement('img')
 
-    div.classList.add('container__card-posts')
+    li.classList.add('container__card-posts')
     img.classList.add('container__card-posts__img')
     divTituloPost.classList.add('container__card-posts__titulo-texto')
     divh3.classList.add('container__card-posts__titulo')
@@ -40,19 +40,19 @@ export class Render {
 
     divEditRemove.append(btnEdit, btnRemove)
 
-    div.append(img, divTituloPost, divEditRemove, divData)
+    li.append(img, divTituloPost, divData, divEditRemove)
     divTituloPost.append(divh3, divTexto)
 
     img.src = `${user['avatarUrl']}`
     btnRemove.id = id
     btnEdit.id = id
-    div.id = id
-    div.key = id
+    li.id = id
+    li.key = id
     btnEditImg.id = id
     divh3.innerHTML = `${user['username']}`
     divTexto.innerHTML = `${content}`
     divData.innerText = `${createdAt}`
 
-    return div
+    return li
   }
 }
