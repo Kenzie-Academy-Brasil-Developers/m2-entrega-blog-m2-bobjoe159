@@ -58,7 +58,7 @@ export class Render {
     img.src = `${user['avatarUrl']}`
     divh3.innerHTML = `${user['username']}`
     divTexto.innerHTML = `${content}`
-    divData.innerText = `${createdAt}`
+    divData.innerText = `${createdAt}` 
     return li
   }
 }
