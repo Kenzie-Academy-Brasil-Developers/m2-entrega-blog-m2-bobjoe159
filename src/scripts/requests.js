@@ -43,4 +43,38 @@ export class ApiRequests {
       .catch(err => console.log(err))
     return posts
   }
+
+  static async createPosts(data) {
+    const createPost = await fetch(`${this.urlBase}/posts`, {
+      method: 'POST',
+      headers: this.headers,
+      body: JSON.stringify(data)
+    })
+      .then(res => res.json())
+      .catch(err => console.log(err))
+    return createPost
+  }
+
+  static async updatePosts(data, id) {
+    const updatePost = await fetch(`${this.urlBase}/posts/${id}`, {
+      method: 'PATCH',
+      headers: this.headers,
+      body: JSON.stringify(data)
+    })
+      .then(res => res.json())
+      .catch(err => console.log(err))
+    return updatePost
+  }
+
+  static async deletePosts(id) {
+    console.log(id)
+    const deletePost = await fetch(`${this.urlBase}/posts/${id}`, {
+      method: 'DELETE',
+      headers: this.headers
+    })
+      .then(res => res.json())
+      .catch(err => console.log(err))
+
+    return deletePost
+  }
 }

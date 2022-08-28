@@ -8,7 +8,6 @@ export class Render {
   }
   static renderCard(post) {
     const { id, content, createdAt, user } = post
-    console.log(user['username'])
     const div = document.createElement('div')
     const img = document.createElement('img')
     const divTituloPost = document.createElement('div')
@@ -45,6 +44,11 @@ export class Render {
     divTituloPost.append(divh3, divTexto)
 
     img.src = `${user['avatarUrl']}`
+    btnRemove.id = id
+    btnEdit.id = id
+    div.id = id
+    div.key = id
+    btnEditImg.id = id
     divh3.innerHTML = `${user['username']}`
     divTexto.innerHTML = `${content}`
     divData.innerText = `${createdAt}`
