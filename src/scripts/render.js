@@ -12,6 +12,9 @@ export class Render {
   }
   static renderCard(post) {
 
+    
+
+
     const { id, content, createdAt, user } = post
     console.log(user['username'])
     const li = document.createElement('li')
@@ -58,7 +61,8 @@ export class Render {
     img.src = `${user['avatarUrl']}`
     divh3.innerHTML = `Nome: ${user['username']}`
     divTexto.innerHTML = `<strong>Post:</strong> ${content}`
-    divData.innerText = `${createdAt}` 
+    divData.innerText = ` ${createdAt.slice(8,10)}/${createdAt.slice(5,7)}/${createdAt.slice(0,4)}` 
+
     return li
   }
 }
