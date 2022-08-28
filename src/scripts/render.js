@@ -51,7 +51,7 @@ export class Render {
     btnEditImg.id = id
     divh3.innerHTML = `${user['username']}`
     divTexto.innerHTML = `${content}`
-    divData.innerText = `${createdAt}`
+    divData.innerText = ` ${createdAt.slice(8,10)}/${createdAt.slice(5,7)}/${createdAt.slice(0,4)}` 
 
     return li
   }
