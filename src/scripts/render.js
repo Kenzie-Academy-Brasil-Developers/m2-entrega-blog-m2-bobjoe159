@@ -7,6 +7,7 @@ export class Render {
     })
   }
   static renderCard(post) {
+    
     const { id, content, createdAt, user } = post
     const li = document.createElement('div')
     const img = document.createElement('img')
@@ -19,6 +20,7 @@ export class Render {
     const btnRemove = document.createElement('button')
     const btnEditImg = document.createElement('img')
     const btnRemoveImg = document.createElement('img')
+
 
     li.classList.add('container__card-posts')
     img.classList.add('container__card-posts__img')
@@ -34,6 +36,7 @@ export class Render {
     btnEditImg.src = `src/img/btnEditPost.svg`
 
     btnRemoveImg.src = `src/img/btnRemovePost.svg`
+
 
     btnEdit.append(btnEditImg)
     btnRemove.append(btnRemoveImg)
